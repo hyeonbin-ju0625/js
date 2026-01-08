@@ -1,0 +1,79 @@
+body {
+   
+    background-size: cover; 
+    background-attachment: fixed; 
+}
+
+
+#reg_container {
+    background-color: rgba(255, 255, 255, 0.9); 
+    width: 550px;
+    margin: 50px auto; 
+    padding: 30px;
+    border: 5px solid olive;
+    border-radius: 10px; 
+}
+
+
+fieldset {
+    border: 1px solid gray;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+legend {
+    background-color: olive;
+    color: white;
+    font-weight: bold;
+    padding: 5px 15px;
+}
+
+
+#id, #pw, #re_pw, #user_name, #email {
+    width: 350px;
+    height: 35px;
+    margin-bottom: 10px;
+    border: 1px solid #333;
+}
+
+
+#birth_y, #birth_m, #birth_d, #tel1, #tel2, #tel3 {
+    width: 80px;
+    height: 30px;
+    border: 1px solid #333;
+    margin-top: 5px;
+}
+
+
+#submit {
+    background-color: orange;
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #cc8400;
+}
+
+#reset_btn {
+    background-color: #ddd;
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    margin-left: 20px;
+    cursor: pointer;
+    border: 2px solid #999;
+}
+
+#reg_logo {
+    width: 100px;
+    height: 100px;
+    position: absolute; 
+    top: 20px;
+    left: 20px;
+    border: 3px solid olive;
+    border-radius: 30%;
+    background-color: white;
+    cursor: pointer;    
+    transition: 0.3s;   
+}

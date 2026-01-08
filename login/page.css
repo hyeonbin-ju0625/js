@@ -1,0 +1,157 @@
+body {
+    background-image: url('https://upload3.inven.co.kr/upload/2021/02/25/bbs/i15745445892.jpg');
+}
+
+#myLayout {
+    background-color: cornflowerblue;
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#top {
+    background-color: yellow;
+    height: 140px;
+    display: flex;
+}
+    #top_left {
+     background-color: orange;
+     flex: 2;
+ }
+        #logo {
+            width: 100px;
+            height: 100px;
+            margin: 18px;
+            float: left;
+        }
+        #pagename {
+            margin-top:50px;
+            font-size:30px;
+        }
+
+    #top_right {
+        background-color: green;
+        width:100%;
+        padding:20px;
+        flex: 8;
+        display: flex;
+        position: relative; 
+        justify-content: center;   
+        align-items: center;
+    }
+        #clock {
+            width:200px;
+            height: 100px;
+            background-color: aqua;
+            margin-right: 20px;
+            flex: 2;
+        }
+
+        #top_banner {
+            height:120px;
+            flex: 8;
+        }
+
+    #nav{
+        background-color: lightgray;
+        width:100%;
+        height:50px;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+        #nav_content {
+            background-color: gray;
+            position: absolute;
+            top: 15px;
+            left: 47%;
+        }
+    
+    #mid {
+        background-color:aqua;
+        height: 1000px;
+        display: flex;
+    }
+        #mid_left {
+            background-color: lightgreen;
+            flex: 1.5;
+        }
+        #login_box {
+            background-color: olive;
+            width: 210px;
+            height: 100px; 
+            margin: 14px auto 0 auto;
+            position: relative; /* 자식 요소(버튼)들을 고정하기 위한 기준점 */
+        }
+
+            #id_text, #password_text {
+                margin-left: 5px;
+                margin-top: 6px;
+            }
+
+            /* 로그인 성공 시 메시지가 뜰 위치 (아이디 칸 근처) */
+            #x {
+                padding: 10px 0 0 10px;
+                color: white;
+                font-weight: bold;
+            }
+
+            /* 버튼들을 박스 하단에 강제로 고정 */
+            #login_button {
+                position: absolute;
+                bottom: 6px; /* 바닥에서 10px 띄움 */
+                left: 5px;
+            }
+
+            #signup_button {
+                position: absolute;
+                bottom: 6px;
+                left: 63px; /* 로그인 버튼 옆으로 배치 */
+            }
+            #write {
+                background-color: rgb(255, 0, 0);
+                width: 210px;
+                height: 140px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top:14px;
+            }
+            #write2 {
+                background-color: rgb(255, 168, 168);
+                width: 210px;
+                height: 140px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top:14px;
+            }
+        #mid_mid {
+            background-color: lightyellow;
+            flex: 7;
+        }
+            #cat {
+                width:210px;
+                height:210px;
+                border: 5px;
+                border-style: solid;
+                border-color: rgb(208, 255, 0);
+            }
+        #mid_right {
+            background-color: lightpink;
+            flex: 1.5;
+            display: flex;
+            flex-direction: column; /* 배너들을 위아래로 배치 */
+            align-items: center;    /* 배너들을 가로 중앙에 배치 (원하는 위치로 조절 가능) */
+            padding-top: 10px;
+        }
+            .mid_banner {
+                width:200px;
+                margin: 10px;
+            }
+        #bot {
+            position: fixed;
+            background-color: blue;
+            width: 100vw;
+            height: 200px;
+            color: gray;
+            bottom: 20px;
+        }
